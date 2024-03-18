@@ -58,13 +58,14 @@ def infer_and_convert_data_types(df, column_def=[]):
                     df[col] = data
                     break
 
-            # category stands out with 50% of uniqness
-            result, data = try_convert_to_category(
-                df[col], unique_percent_max=50
-            )  # 50% or less of unique -> treshold to categorize
-            if result:
-                df[col] = data
-                continue
+            # If no other conversion succeeded, try converting to category
+            else:    
+                # category stands out with 50% of uniqness
+                result, data = try_convert_to_category(
+                    df[col], unique_percent_max=50
+                )  # 50% or less of unique -> treshold to categorize
+                if result:
+                    df[col] = data
 
     return df
 

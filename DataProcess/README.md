@@ -47,6 +47,9 @@ Make sure your Python and Django evnironment is set up
 #### `pip install pandas`
 #### `pip install numpy`
 
+#### to read excel file:
+#### `pip install openpyxl` 
+
 ### apply migration:
 #### `python manage.py migrate`
 
