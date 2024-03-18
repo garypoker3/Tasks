@@ -13,9 +13,8 @@ def process_file(request):
     """
     Process the uploaded file into a Pandas DataFrame
     Tries to infer columns type and convert data
-    Defines data columns
-    Returns data and columns definintion in Response
     Persists DataFrame into DataFrameModel
+    Returns a well-formatted response object containing the processed data and column definitions.
     """
     if request.method == "POST":
         file_obj = request.FILES.get("file")
@@ -57,6 +56,11 @@ def process_file(request):
 
 @api_view(["POST"])
 def apply_conversion(request):
+    """
+    Reads a Pandas DataFrame that was previously persisted to a database.
+    Uses the request's column definitions to explicitly convert columns to user-defined types.
+    Returns a well-formatted response object containing the processed data and column definitions.
+    """
 
     if request.method == "POST":
         try:

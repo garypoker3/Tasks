@@ -95,7 +95,10 @@ const FileUpload = () => {
             setUploadMessage(`Uploading to server... ${percentCompleted}%`);
         },
       }
-    ).then(handleResponse).catch(handleException).finally(setIsUploading(false));
+    )
+     .then(handleResponse)
+     .catch(handleException)
+     .finally(() => setIsUploading(false));
   };
 
   const handleException = ex => {
@@ -144,7 +147,6 @@ const FileUpload = () => {
     setColumnsDef(columns_def_mapped);
     setResponseData(data);
     setUploadMessage('');
-
   };
 
   // apply conversion event from 'child' EditableDataGrid component 
@@ -156,7 +158,9 @@ const FileUpload = () => {
       // rest api url hardcoded
      'http://localhost:8000/api/apply-conversion/',
       cols
-   ).then(handleResponse).catch(handleException).finally(setIsUploading(false));
+   ).then(handleResponse)
+    .catch(handleException)
+    .finally(() => setIsUploading(false));
   };
 
   return (
