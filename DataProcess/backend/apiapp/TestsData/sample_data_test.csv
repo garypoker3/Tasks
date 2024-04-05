@@ -1,0 +1,11 @@
+TextData,IntData,FloatData,BoolData,DateTimeData,TimeDeltaData,CategoryData,ComplexData,MixedTypeData,NonStandardNum,NonStandardDate
+Hello,100,10.5,TRUE,1/01/2020,1 days,Type A,1+2j,Mixed1,"1,000",1/01/2020
+World,-20,-2.3,FALSE,1/02/2020,2 hours,Type B,3+5j,Mixed2,2,1/02/2020
+Test,3000,0.001,TRUE,1/03/2020,3 minutes,Type A,-1+2j,10,"3,000","March 1, 2020"
+Data,400,40.78,FALSE,1/04/2020,4 seconds,Type C,2-3j,TRUE,"4,000",1-Mar-20
+Sample,-500,-50.5,TRUE,1/05/2020,5 weeks,Type B,0+1j,1/01/2020,5,3/01/2020
+Row,60000,4,FALSE,Null,6 months,Type A,-2-2j,FALSE,,1-Mar-20
+Example,700,70.07,TRUE,1/07/2020,7 years,Type C,1-1j,1+2j,7,2020.03.01
+Text,8000,800.8,FALSE,1/08/2020,8 days,Type B,2+0j,-20,"8,000",1-Mar-20
+CSV,900,-90.9,TRUE,1/09/2020,9 hours,Type A,3-3j,3,9,1/03/2020
+10,1000,5,FALSE,1/10/2020,10 minutes,Type C,-1-1j,Type A,,20200301

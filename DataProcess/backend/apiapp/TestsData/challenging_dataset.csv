@@ -1,0 +1,11 @@
+Mixed_Numeric,Complex_Numbers,Inconsistent_Dates,Timedelta_Like,Boolean_Values,Text_With_Numbers,Category_Like,Percentage change,Currency
+"345,123,456",1+2j,1/02/2020,1 days,TRUE,text,cat1,-5%,-50
+text,3.5-4.5j,4/03/2020,2d,FALSE,more text,cat2,-5%,20
+456.78,,"March 5, 2020",3D,TRUE,text with 123,cat1,-5%,80
+0,NaN,4/05/2020,4 day,FALSE,100% sure,cat2,-5%,-40
+-1,0,2020.06.05,-5days,1,ID-1234,cat1,-5%,
+5.00E+03,5,7/08/2020,P6D,0,text(123),cat3,5%,
+NaN,-1-1j,8-Sep-20,7.0 days,T,123 text,cat2,-5%,
+0.5,3.14+0j,20200909,eight days,f,NaN,cat1,-5%,
+"-1,234",2+0j,10-Oct-20,,yes,,cat2,-5%,
+-123,0+3j,11/12/2020,9,no,123.456,cat3,-5%,40 EUR
