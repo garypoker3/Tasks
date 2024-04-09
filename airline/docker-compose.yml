@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    db:
+        image: postgres
+        environment:
+            - POSTGRES_PASSWORD=mypassword
+        expose:
+            - 5432
+        volumes:
+            - postgres_data:/var/lib/postgresql/data  # Mount a volume named postgres_data to keep db
+
+    web:
+        build: .
+        volumes:
+            - .:/usr/src/app
+        ports:
+            - "8000:8000"
+        depends_on:
+            - db
+volumes:
+  postgres_data:  # Define the volume named postgres_data
